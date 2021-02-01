@@ -21,7 +21,7 @@ python -m pip install -r requirements.txt
 
 Be sure to initialize the database before running the tests from the command line:
 ```
-flask init-db
+python -m flask init-db
 ```
 
 Then run the tests with this command:
@@ -34,12 +34,12 @@ note: use this command vs. `pytest` because it sets the sys.path for relative im
 
 Like the tests the database needs to be initialized before running. Do that with this command:
 ```
-flask init-db
+python -m flask init-db
 ```
 
 Run the app from the main folder directory (i.e. not the `app` subdirectory):
 ```
-flask run
+python -m flask run
 ```
 
 And view the Flask MVC Shopping Cart app by going to localhost:5000 in the web browser!
