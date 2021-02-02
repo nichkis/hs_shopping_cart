@@ -8,8 +8,8 @@ def test_add_item(client) -> None:
 
 def test_remove_item(client) -> None:
     # testing valid cart item removal
-    response_invalid = client.post('/remove-item/1')
-    assert response_invalid.status_code == 302
+    response_valid = client.post('/remove-item/1')
+    assert response_valid.status_code == 302
 
 def test_update_quantity(client) -> None:
     # testing invalid query parameters
