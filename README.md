@@ -43,3 +43,8 @@ python -m flask run
 ```
 
 And view the Flask MVC Shopping Cart app by going to localhost:5000 in the web browser!
+
+#### Considerations
+
+1. More testing could be added to the db layer but due to the time constraints of this assignment I kept things as simple as possible.
+2. The remove-item and update-quatity endpoints I left as POST methods becasue HTML forms do not support DELETE and PUT.
